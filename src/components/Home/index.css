@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.home-cont{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: calc(100% - 100px);
+    /* background-color: #272847; */
+    overflow-y: scroll;
+}
+
+.home-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#272847;
+    padding:10px 80px;
+    padding-bottom: 42px;
+    position:static;
+}
+
+
+
+.greet{
+    display: flex;
+    flex-direction: column;
+}
+
+.greet-head{
+    color: #fff;
+    font-size: 24px;
+    font-family: "Roboto";
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.greet-para{
+    color: #5d6683;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.date-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.icon{
+    margin-right: 5px;
+}
+.date-desc{
+    margin-right: 15px;
+}
+
+.time-desc {
+    margin-right: 100px;
+}
+
+
+.home-mid{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 80px;
+}
+
+.cards-cont{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+   
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 168px;
+    box-shadow: 0px 4px 8px 0px #bfbfbf;
+    margin-right:35px;
+    margin-top: 20px;
+}
+
+.card-head{
+    font-family: "Open Sans";
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.card-para{
+    font-family: "Open Sans";
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-month{
+    font-size: 12px;
+    font-weight: 600;
+    color: #5d6683;
+}
+
+.home-btm{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    padding: 42px;
+}
+
+
+
+
+
+
+
+.home-slide{
+    box-shadow: 0px 4px 8px 0px #bfbfbf;
+    width:700px;
+    height: 100%;
+    padding:40px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-container {
+    width: 100%;
+    max-width: 1100px;
+    /* margin-top: 10px; */
+
+}
+
+.logo-image {
+    height: 100px;
+    width: 100%;
+}
+
+/* You can change the CSS color to style the Next and 
+Previous Arrow buttons according to your project */
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-item{
+    box-shadow: 0px 4px 8px 0px #bfbfbf;
+    height: 250px;
+}
+
+.card-tle{
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.card-info{
+    font-size: 12px;
+        padding: 5px 10px;
+
+}
+.view-btn{
+    display: inline;
+    align-self: center;
+    margin-top: 55px;
+    background-color:navy;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.slider-container {
+    padding: 42px;
+    background-color: blue;
+}
+
+
+.timeline-cont{
+    padding: 10px 20px;
+    width: 35%;
+    box-shadow: 0px 4px 8px 0px #bfbfbf;
+
+}
+
+.timeline-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.time-top-head{
+    font-size: 20px;
+    font-weight: 500;
+    color:#02CCFE;
+}
+
+.select-input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 40%;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+.timeline-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+
+.card-r{
+    display: flex;
+    flex-direction: column;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+    border: none;
+    background-color: #d1d1d1;
+
+}
+
+.vl{
+    border-left: 4px solid #eaeaea;
+    height:180px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.card-l{
+    margin-left: 15px;
+}
+
+
+.card-time{
+    color: #02CCFE;
+    margin-bottom: 15px;
+}
+
+.card-name{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+}
