@@ -1,6 +1,5 @@
 .app-cont{
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
 }

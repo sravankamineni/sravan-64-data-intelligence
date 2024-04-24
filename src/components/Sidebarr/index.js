@@ -12,8 +12,12 @@ function Sidebar() {
                 <button onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </button>
-                <img alt='logo' src='https://res.cloudinary.com/dnmcjyigq/image/upload/v1713887546/d_guqj4i.png' className='dash-logo' />
+                <div className='logo-cont'>
+                    <img alt='logo' src='https://res.cloudinary.com/dnmcjyigq/image/upload/v1713887546/d_guqj4i.png' className='dash-logo' />
+                    {isOpen ? <p>ashboard</p> : <p></p>}
 
+                </div>
+                
                 <ul>
                     <li>
                         {isOpen ? <><FaSearch /> Search</> : <FaSearch />}

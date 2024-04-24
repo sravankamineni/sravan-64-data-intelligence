@@ -198,20 +198,24 @@ const Home = () => {
                         
                         
                         
-                        {isView && <Slider className="slider-2" style={{ marginTop: "55px" }} {...settings}>
-                            {companyLogosData.map((eachLogo) => {
-                                const { id, company_logo_url } = eachLogo;
-                                return (
-                                    <div className="slick-item" key={id}>
-                                        <img
-                                            className="logo-image"
-                                            src={company_logo_url}
-                                            alt="company logo"
-                                        />
-                                    </div>
-                                );
-                            })}
-                        </Slider>}
+                        {isView && <div className="slick-container">
+                            <Slider style={{ marginTop: "55px" }} {...settings} {...settings}>
+                                {companyLogosData.map((eachLogo) => {
+                                    const { id, company_logo_url, title, desc } = eachLogo;
+                                    return (
+                                        <div className="slick-item" key={id}>
+                                            <img
+                                                className="logo-image"
+                                                src={company_logo_url}
+                                                alt="company logo"
+                                            />
+                                            <h1 className='card-tle'>{title}</h1>
+                                            <p className='card-info'>{desc}</p>
+                                        </div>
+                                    );
+                                })}
+                            </Slider>
+                        </div>}
                       
                         <button className='view-btn' onClick={() => setIsView(!isView)}>
                             {isView ? <p>View Less</p> : <p>View More</p> }
